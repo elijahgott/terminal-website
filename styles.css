@@ -1,0 +1,27 @@
+html{
+  font-family: monospace, monospace;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+}
+
+.inputLine{
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.user{
+  color: green;
+  font-weight: bold;
+}
+
+.terminalInput{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  caret-color: white;
+  color: white;
+}
