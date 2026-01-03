@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="page" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,22 @@
   </head>
   <body>
     <div class="welcome">
-      <div>*********</div>
+      <div>*************</div>
       <p>Welcome user!</p>
-      <div>*********</div>
+      <div>*************</div>
+    </div>
+
+    <div class="log" id="log">
+
     </div>
 
     <div class="inputLine">
       <p class="user">user:</p>
-      <input type="text" class="terminalInput" autofocus />
+      <form id="inputForm" autocomplete="off" >
+        <input type="text" class="terminalInput" id="terminalInput" autofocus />
+      </form>
     </div>
+
   </body>
   <script src="script.js"></script>
 </html>

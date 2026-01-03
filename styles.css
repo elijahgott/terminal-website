@@ -1,8 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html{
   font-family: monospace, monospace;
   font-size: 16px;
   background-color: black;
   color: white;
+  padding: 8px;
+}
+
+.logItem{
+  display: flex;
+  margin-top: 4px;
 }
 
 .inputLine{
@@ -14,6 +26,7 @@ html{
 .user{
   color: green;
   font-weight: bold;
+  margin-right: 4px;
 }
 
 .terminalInput{
@@ -24,4 +37,6 @@ html{
   background-color: transparent;
   caret-color: white;
   color: white;
+  font-size: 16px;
+  font-family: monospace, monospace;
 }
