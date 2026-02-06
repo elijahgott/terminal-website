@@ -2,14 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  --text-color: green;
+
 }
 
 html{
   font-family: monospace, monospace;
   font-size: 16px;
-  background-color: black;
-  color: white;
-  padding: 8px;
+  background-color: rgba(0, 25, 0);
+  color: var(--text-color);
+  padding: 24px;
 }
 
 .logItem{
@@ -35,8 +38,8 @@ html{
   border: none;
   outline: none;
   background-color: transparent;
-  caret-color: white;
-  color: white;
+  caret-color: var(--text-color);
+  color: var(--text-color);
   font-size: 16px;
   font-family: monospace, monospace;
 }
