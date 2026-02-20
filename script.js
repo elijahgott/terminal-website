@@ -62,7 +62,7 @@ const submitText = (event) => {
     executeCommand(commandIndex);
   }
   else{
-    console.log('nope')
+    commandNotFound(inputText)
   }
 
   // clear input field
@@ -85,6 +85,17 @@ const executeCommand = (commandNum) => {
   newLog.classList.add('logItem')
 
   const textElement = createTextElement(commandText[commandNum])
+  newLog.appendChild(textElement)
+
+  // display input in log
+  log.appendChild(newLog)
+}
+
+const commandNotFound = (input) => {
+  const newLog = document.createElement('div')
+  newLog.classList.add('logItem')
+
+  const textElement = createTextElement(`ERROR: command "${input}" not found.`)
   newLog.appendChild(textElement)
 
   // display input in log
